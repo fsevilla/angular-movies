@@ -1,0 +1,10 @@
+<h2>{{title}}</h2>
+<form (submit)="onSearch()">
+  <input [(ngModel)]="searchText" type="text" name="buscar" >
+  <button>Buscar</button>
+</form>
+<ul>
+  <li *ngFor="let item of movies">
+    <a routerLink="/movie-details">{{item.title}}</a>
+  </li>
+</ul>

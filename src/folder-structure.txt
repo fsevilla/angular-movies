@@ -1,0 +1,14 @@
+
+
+
+src
+  app*
+    services
+      movie.service.ts
+
+    movies/
+      movies.component.ts/html/css
+
+
+
+  ng generate service services/movie

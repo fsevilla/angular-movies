@@ -8,6 +8,7 @@ import { Movie } from './../movies/movies.component';
 })
 export class MovieService {
 
+
   movies:Movie[] = [
     {
       title: 'El Padrino',
@@ -52,7 +53,7 @@ export class MovieService {
     return this.httpClient.get('https://jsonplaceholder.typicode.com/albums').toPromise();
   }
 
-  getMovieById(id:number) {
+  getMovieById(id:number):Promise<any> {
     return this.httpClient.get('https://jsonplaceholder.typicode.com/albums/'+id).toPromise();
   }
 }

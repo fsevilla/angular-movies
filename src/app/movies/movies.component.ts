@@ -28,8 +28,13 @@ export class MoviesComponent implements OnInit {
 
   movies:Movie[] = []
 
-  searchText:string = "trix";
+  searchText:string = "";
   
+  url:string = 'ruta-prueba'
+
+  getUrl() {
+    return 'ruta-prueba2';
+  }
 
   constructor(private movieService:MovieService) {
     console.log('Se construye la clase...');
